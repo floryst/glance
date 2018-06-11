@@ -4,11 +4,11 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "c7939dda169f592742fc7e087b761d32"
+    "revision": "f960ce8ecb8b5f4d9150c51680c1d049"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "cfbd724053b5e9a46446dd353c6f49b8"
+    "revision": "a600a365fdd1de6b78fe1c1ce829000b"
   },
   {
     "url": "index.html",
