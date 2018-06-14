@@ -4,15 +4,23 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "6650bccdc8028c1added24f839ba4beb"
+    "revision": "e2726ab74dd671ee2c913e49033d5721"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "d6f807872b9634591a3d45a4d62395de"
+    "revision": "40ad11ee6c50cb7e6db493dbdb4a6984"
+  },
+  {
+    "url": "glance.js",
+    "revision": "edd565a43ab58fae02a82d72a07a6033"
   },
   {
     "url": "index.html",
-    "revision": "32c361e09b5ae9b5ac82360ffb114efe"
+    "revision": "35142d0434bf7b32e471c33f52bac5fd"
+  },
+  {
+    "url": "itk/createWebworkerPromise.js",
+    "revision": "97564f088ab9739f631fcc015095326e"
   },
   {
     "url": "itk/extensionToImageIO.js",
@@ -52,151 +60,131 @@ workboxSW.precache([
   },
   {
     "url": "itk/ImageIOs/itkBioRadImageIOJSBinding.js",
-    "revision": "2d80328895341622d8f6f424c9f18327"
+    "revision": "23a15088136663426a68cdda5649698c"
   },
   {
     "url": "itk/ImageIOs/itkBioRadImageIOJSBindingWasm.js",
-    "revision": "2a3508641db66e814905fb53ad50096d"
+    "revision": "ee469e552c883348142093c5c322e1d1"
   },
   {
     "url": "itk/ImageIOs/itkBMPImageIOJSBinding.js",
-    "revision": "b69e1e51336e0053ade970f9a4a35906"
+    "revision": "e8920292b3ed5af1958354052c3e6668"
   },
   {
     "url": "itk/ImageIOs/itkBMPImageIOJSBindingWasm.js",
-    "revision": "2b1d834e1026a39c48a79601bad1a885"
-  },
-  {
-    "url": "itk/ImageIOs/itkDCMTKImageIOJSBindingWasm.js",
-    "revision": "de62d0a7e061a15efae8480bb74d2ca9"
-  },
-  {
-    "url": "itk/ImageIOs/itkDICOMImageSeriesReaderJSBindingWasm.js",
-    "revision": "37607df573690058c92cd38d3eabbd31"
-  },
-  {
-    "url": "itk/ImageIOs/itkGDCMImageIOJSBindingWasm.js",
-    "revision": "aae30aef1c39f9b1f2cd45deea65202e"
+    "revision": "9282883296ca9c0ee41714b80b26c074"
   },
   {
     "url": "itk/ImageIOs/itkGE4ImageIOJSBinding.js",
-    "revision": "1367fc763718b5ad070ac431fa623ae4"
+    "revision": "d4bb5a2b2143d9597456c653bd32c8b0"
   },
   {
     "url": "itk/ImageIOs/itkGE4ImageIOJSBindingWasm.js",
-    "revision": "be0dcce7c0cd90c57c9a1cb4729706b4"
+    "revision": "75902466d43312c80a3395166e48a0ce"
   },
   {
     "url": "itk/ImageIOs/itkGE5ImageIOJSBinding.js",
-    "revision": "7fa430358ce573436b3d3a3e0a71af79"
+    "revision": "81a523e171409f41a540b2542b92d449"
   },
   {
     "url": "itk/ImageIOs/itkGE5ImageIOJSBindingWasm.js",
-    "revision": "20e50d4efa21fdc64c646b851524de83"
+    "revision": "76645ab4b7d2d5e2a302510a0c127863"
   },
   {
     "url": "itk/ImageIOs/itkGEAdwImageIOJSBinding.js",
-    "revision": "a129e1957aac9dfa664725f11512895f"
+    "revision": "0fbadcd10ece63542350c83b7436e64f"
   },
   {
     "url": "itk/ImageIOs/itkGEAdwImageIOJSBindingWasm.js",
-    "revision": "7e34d684f2a50b64d8b896c4d356da5f"
+    "revision": "9e4de62cce5f5021970261d53770f137"
   },
   {
     "url": "itk/ImageIOs/itkGiplImageIOJSBinding.js",
-    "revision": "fe20eae2ede14f9683adc5d21c6da43c"
+    "revision": "856757ea44e64acb688595a35970c8d1"
   },
   {
     "url": "itk/ImageIOs/itkGiplImageIOJSBindingWasm.js",
-    "revision": "dc1062a636dbf8c399b26f4768f74077"
-  },
-  {
-    "url": "itk/ImageIOs/itkHDF5ImageIOJSBindingWasm.js",
-    "revision": "909987edb6f2069eec1e2a5fcb596985"
+    "revision": "4ea6e9c3a7af3714b940979994113602"
   },
   {
     "url": "itk/ImageIOs/itkJPEGImageIOJSBinding.js",
-    "revision": "24a0d41aa6dfab25dc7da39a9263f277"
+    "revision": "d3f8c16b7baf8e764da9b816d4d5796a"
   },
   {
     "url": "itk/ImageIOs/itkJPEGImageIOJSBindingWasm.js",
-    "revision": "11dbf698a4c3a4132671f572c4e13c69"
+    "revision": "cb4ab435781367d0379e1647a8c01d3d"
   },
   {
     "url": "itk/ImageIOs/itkJSONImageIOJSBinding.js",
-    "revision": "2298daa1c9e46437741b1daa62aa1de7"
+    "revision": "a3a5292a2b35a828cda387a3eb91839a"
   },
   {
     "url": "itk/ImageIOs/itkJSONImageIOJSBindingWasm.js",
-    "revision": "a75f63ed48875043bf1bb00aa0e32a41"
+    "revision": "c65c409bd2ed22d32da70c29bb0d6f1f"
   },
   {
     "url": "itk/ImageIOs/itkLSMImageIOJSBindingWasm.js",
-    "revision": "f03969d2deeb6b5e31abded1ff654a50"
+    "revision": "71d8df64fd6fc964e220edde55588d5f"
   },
   {
     "url": "itk/ImageIOs/itkMetaImageIOJSBinding.js",
-    "revision": "09f2d041a6226ac198fbbada7967f747"
+    "revision": "14d594dcb0c393de93cbbb67bc3da620"
   },
   {
     "url": "itk/ImageIOs/itkMetaImageIOJSBindingWasm.js",
-    "revision": "1c718be81462f42cfc2f34fd10bd38fe"
+    "revision": "60eb99d8849f962656103ce70173194d"
   },
   {
     "url": "itk/ImageIOs/itkMGHImageIOJSBinding.js",
-    "revision": "97fe784dff5d851cf01df41cc77b0409"
+    "revision": "5214a6bbe5b358df6a1f9a50ebdabbc6"
   },
   {
     "url": "itk/ImageIOs/itkMGHImageIOJSBindingWasm.js",
-    "revision": "8a776c8dd3fe37bbaa79dd9739caa2fc"
-  },
-  {
-    "url": "itk/ImageIOs/itkMINCImageIOJSBindingWasm.js",
-    "revision": "d5b8a364e439671cacd8f398f4d13d7d"
+    "revision": "5c057063a8666f0cb27f9177a31658b7"
   },
   {
     "url": "itk/ImageIOs/itkMRCImageIOJSBinding.js",
-    "revision": "b765dab24d207015a96d6f8500a3e3b1"
+    "revision": "b5fb9fcfb97328e360d55d936abb5655"
   },
   {
     "url": "itk/ImageIOs/itkMRCImageIOJSBindingWasm.js",
-    "revision": "c897b4336a2cb12821da5543c82b975a"
+    "revision": "ca0894af02e9598f0324f904abdca49d"
   },
   {
     "url": "itk/ImageIOs/itkNiftiImageIOJSBinding.js",
-    "revision": "b9b5361cd7015b22c9568dd8f42f5835"
+    "revision": "a759cdbffc0b2cdd134f3a4f6c33ff8e"
   },
   {
     "url": "itk/ImageIOs/itkNiftiImageIOJSBindingWasm.js",
-    "revision": "ba41080e4d008418532fe7733a294419"
+    "revision": "847aa005de6b6b476348de33ef35b942"
   },
   {
     "url": "itk/ImageIOs/itkNrrdImageIOJSBinding.js",
-    "revision": "fc26049bcf8aec7df6ceb7d26219da85"
+    "revision": "136c04d8c2d8f4dfb013c0537bb1f3fa"
   },
   {
     "url": "itk/ImageIOs/itkNrrdImageIOJSBindingWasm.js",
-    "revision": "ca72a2331114f947ba64b8e7b6145ae1"
+    "revision": "5f35d8c47d938971a002a2f23d7dcaf9"
   },
   {
     "url": "itk/ImageIOs/itkPNGImageIOJSBinding.js",
-    "revision": "6f4ece734fd7be5de385eb1d9a98ad3a"
+    "revision": "8f235d37504cc81ae425cf459a43ac81"
   },
   {
     "url": "itk/ImageIOs/itkPNGImageIOJSBindingWasm.js",
-    "revision": "df6c3895c2988704e61ef788b0b917ad"
+    "revision": "c1bbf831fc4f813109913e9a2d6aeb32"
   },
   {
     "url": "itk/ImageIOs/itkTIFFImageIOJSBindingWasm.js",
-    "revision": "cfc3ab50820a1fd19c17922c5a97b635"
+    "revision": "aa1128ef4aa911573e2a74b38a6d0b64"
   },
   {
     "url": "itk/ImageIOs/itkVTKImageIOJSBinding.js",
-    "revision": "c5a6bf9f22e54b53a1d1cffdf745cd96"
+    "revision": "ab2e300152f9d985300dcd0a3d5e5ade"
   },
   {
     "url": "itk/ImageIOs/itkVTKImageIOJSBindingWasm.js",
-    "revision": "e3cd72c19eeaa5003fae879037b69d9e"
+    "revision": "ecfe75917489922c916ce7c010afd18d"
   },
   {
     "url": "itk/imageJSComponentToIOComponent.js",
@@ -228,7 +216,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/loadEmscriptenModuleBrowser.js",
-    "revision": "871da9e968874038a56aaaeee17b78c7"
+    "revision": "93ea7adfbd7faec6c8dcd155b70fa34a"
   },
   {
     "url": "itk/loadEmscriptenModuleNode.js",
@@ -256,7 +244,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/MeshIOs/itkVTKPolyDataMeshIOJSBindingWasm.js",
-    "revision": "3f620ff2edd52f45ff74795f9901be96"
+    "revision": "1eeeb12c463dc0d7ddfe6aed8f453bb0"
   },
   {
     "url": "itk/meshJSComponentToIOComponent.js",
@@ -284,19 +272,19 @@ workboxSW.precache([
   },
   {
     "url": "itk/Pipelines/BinShrink.js",
-    "revision": "6ef41389415ba19c63272cc0a619fb9a"
+    "revision": "bf3e162fe12005810737a684fc22de51"
   },
   {
     "url": "itk/Pipelines/BinShrinkWasm.js",
-    "revision": "875c2379e654ed26145c027487d22a38"
+    "revision": "de925c07c7d49e4d44defd5fb6d27d53"
   },
   {
     "url": "itk/Pipelines/InputOutputFiles.js",
-    "revision": "a95bb114b2030140d7b400a4f5c2c780"
+    "revision": "0451c22aaa8c66becad576ccba377755"
   },
   {
     "url": "itk/Pipelines/InputOutputFilesWasm.js",
-    "revision": "fb5f381972fbd2a9a5d160a0e55ebc67"
+    "revision": "8ffdc7fea594ba0fac8eb633153249bf"
   },
   {
     "url": "itk/Pipelines/itkJSPipelinePreBinShrink.js",
@@ -312,11 +300,11 @@ workboxSW.precache([
   },
   {
     "url": "itk/Pipelines/StdoutStderr.js",
-    "revision": "f238c84dc50859ab1ef40d77f0232b03"
+    "revision": "07ddf2d0e7b0e8fc5ad8b1c81aa163e6"
   },
   {
     "url": "itk/Pipelines/StdoutStderrWasm.js",
-    "revision": "9a2e2ef543c406c3ee7f4404d64ec1c8"
+    "revision": "c5e2fdba9a15b748e61efa174b6bb67b"
   },
   {
     "url": "itk/PixelTypes.js",
@@ -324,15 +312,15 @@ workboxSW.precache([
   },
   {
     "url": "itk/readImageArrayBuffer.js",
-    "revision": "b7a55be7cd08a18f0f0e70c6d8ebf2c0"
+    "revision": "d9f74a0c632bfc7216c6c43654b5f900"
   },
   {
     "url": "itk/readImageBlob.js",
-    "revision": "e1c5f022ea208358e49e78c2d6ae4eb8"
+    "revision": "172cd1618f3d5b1de2f8c6ea3ef2d2dd"
   },
   {
     "url": "itk/readImageDICOMFileSeries.js",
-    "revision": "367706c0f528383abd8f3a1b168671b1"
+    "revision": "4d7cdb7e1d3847518e908b5e509ea132"
   },
   {
     "url": "itk/readImageEmscriptenFSDICOMFileSeries.js",
@@ -344,7 +332,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/readImageFile.js",
-    "revision": "6ed6a872a0d58cade325f21f64c1f924"
+    "revision": "a314b734ecfcc7f681447f558496dd5c"
   },
   {
     "url": "itk/readImageLocalDICOMFileSeries.js",
@@ -356,11 +344,11 @@ workboxSW.precache([
   },
   {
     "url": "itk/readMeshArrayBuffer.js",
-    "revision": "f4b7cc821d263257f3ca5fe3f77c7d40"
+    "revision": "55d7175b413e3a52795e868c1051a252"
   },
   {
     "url": "itk/readMeshBlob.js",
-    "revision": "03815e9c297f44610299a4ea1221d1b4"
+    "revision": "2a54f32eab7c323afaded0d42a2eefee"
   },
   {
     "url": "itk/readMeshEmscriptenFSFile.js",
@@ -368,7 +356,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/readMeshFile.js",
-    "revision": "3ba1ba5281d930f406c200b2cce883b7"
+    "revision": "ab396c2c771d6073654d1a87d13e7993"
   },
   {
     "url": "itk/readMeshLocalFile.js",
@@ -376,7 +364,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/runPipelineBrowser.js",
-    "revision": "375b1de92af1ed37313941a62e54ffcd"
+    "revision": "de9fe82506ef697ec6a1350005f6f5ac"
   },
   {
     "url": "itk/runPipelineEmscripten.js",
@@ -392,19 +380,19 @@ workboxSW.precache([
   },
   {
     "url": "itk/WebWorkers/ImageIO.worker.js",
-    "revision": "b7b1cf95476027d1788388ed602e6ce9"
+    "revision": "9e8e7f9a7700c2ba29defada3eba7df4"
   },
   {
     "url": "itk/WebWorkers/MeshIO.worker.js",
-    "revision": "580b050f9d31b5987b9247e9c448ee71"
+    "revision": "e3d9568ef315ec3473fc7eb9330df095"
   },
   {
     "url": "itk/WebWorkers/Pipeline.worker.js",
-    "revision": "296ed9031a563ccf589f9b56afaa0c8e"
+    "revision": "9b6d5e6ba3ad8cd87225aa204381c8b0"
   },
   {
     "url": "itk/writeImageArrayBuffer.js",
-    "revision": "cc866f1305499d6d0564986b4d1f7070"
+    "revision": "2363fd73447e510c892598c4e0c18c8d"
   },
   {
     "url": "itk/writeImageEmscriptenFSFile.js",
@@ -416,7 +404,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/writeMeshArrayBuffer.js",
-    "revision": "6fffbd0a398801d90a7a72904bb320d9"
+    "revision": "88fd76ca3d117fe2ff9c2edb30c64a3c"
   },
   {
     "url": "itk/writeMeshEmscriptenFSFile.js",
@@ -425,6 +413,10 @@ workboxSW.precache([
   {
     "url": "itk/writeMeshLocalFile.js",
     "revision": "5892aded0cf4c2c7e8090f9a4ebb71e7"
+  },
+  {
+    "url": "runtime.js",
+    "revision": "5f2097b7ef3da9baff87100364f4f4eb"
   }
 ]);
 
