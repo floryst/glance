@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "itk@9.1.1",
+      "/home/forrestli/Glance-design/glance-vue"
+    ]
+  ],
   "_from": "itk@9.1.1",
   "_id": "itk@9.1.1",
   "_inBundle": false,
@@ -19,8 +25,7 @@
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/itk/-/itk-9.1.1.tgz",
-  "_shasum": "e215ccc8f66e00e1d29c1659d3ed807ea1b5fbdc",
-  "_spec": "itk@9.1.1",
+  "_spec": "9.1.1",
   "_where": "/home/forrestli/Glance-design/glance-vue",
   "author": {
     "name": "Insight Software Consortium"
@@ -31,7 +36,6 @@
   "bugs": {
     "url": "https://github.com/InsightSoftwareConsortium/itk-js/issues"
   },
-  "bundleDependencies": false,
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
@@ -44,7 +48,6 @@
     "promise-file-reader": "^0.3.1",
     "webworker-promise": "^0.4.1"
   },
-  "deprecated": false,
   "description": "Read and write 2D, 3D, and ND images with the Insight Toolkit (ITK)",
   "devDependencies": {
     "async": "^2.6.0",
