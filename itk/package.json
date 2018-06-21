@@ -2,7 +2,7 @@
   "_args": [
     [
       "itk@9.1.1",
-      "/home/forrestli/Glance-design/glance-vue"
+      "/home/forrestli/Glance"
     ]
   ],
   "_from": "itk@9.1.1",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/itk/-/itk-9.1.1.tgz",
   "_spec": "9.1.1",
-  "_where": "/home/forrestli/Glance-design/glance-vue",
+  "_where": "/home/forrestli/Glance",
   "author": {
     "name": "Insight Software Consortium"
   },

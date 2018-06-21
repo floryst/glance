@@ -4,15 +4,15 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "71684451981d8aad18885b8ed6175636"
+    "revision": "bd38147eb29a26037fd5a7ccbdd1f69a"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "00924bed8891dd361e48b31b12978641"
+    "revision": "bd0b3e686542ba9cce9774bef6ff0a1a"
   },
   {
     "url": "glance.js",
-    "revision": "8c6e5f9404baea9fdd8e9ab56bfffe39"
+    "revision": "cdc89624daecae8e4269fb3db64f276c"
   },
   {
     "url": "index.html",
@@ -265,10 +265,6 @@ workboxSW.precache([
   {
     "url": "itk/MimeToMeshIO.js",
     "revision": "e6f96acd544b81f845756ae5f696c290"
-  },
-  {
-    "url": "itk/node_modules/commander/index.js",
-    "revision": "694c3217c5b63e0535cc607a7e4e2e19"
   },
   {
     "url": "itk/Pipelines/BinShrink.js",
