@@ -1,1 +1,48 @@
-!function(e,o){if("object"==typeof exports&&"object"==typeof module)module.exports=o();else if("function"==typeof define&&define.amd)define([],o);else{var r=o();for(var t in r)("object"==typeof exports?exports:e)[t]=r[t]}}(window,function(){return(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{319:function(e,o,r){"use strict";"serviceWorker"in navigator&&"http:"!==document.location.protocol&&window.addEventListener("load",function(){navigator.serviceWorker.register("./serviceWorker.js").then(function(e){console.log("Workbox service worker successful with scope:",e.scope)}).catch(function(e){console.error("Workbox service worker failed to register",e)})})}},[[319,0]]])});
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(window, function() {
+return (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["glance-external-Workbox"],{
+
+/***/ "./externals/Workbox/index.js":
+/*!************************************!*\
+  !*** ./externals/Workbox/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nif ('serviceWorker' in navigator && document.location.protocol !== 'http:') {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('./serviceWorker.js').then(function (registration) {\n      console.log('Workbox service worker successful with scope:', registration.scope);\n    }).catch(function (error) {\n      console.error('Workbox service worker failed to register', error);\n    });\n  });\n}\n\n//# sourceURL=webpack:///./externals/Workbox/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./node_modules/webpack/hot sync ^\\\\.\\\\/log$\";\n\n//# sourceURL=webpack:///(webpack)/hot_sync_nonrecursive_^\\.\\/log$?");
+
+/***/ }),
+
+/***/ 4:
+/*!******************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:9999 ./externals/Workbox/index.js ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /home/forrestli/Glance/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:9999 */\"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:9999\");\nmodule.exports = __webpack_require__(/*! /home/forrestli/Glance/externals/Workbox/index.js */\"./externals/Workbox/index.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+
+/***/ })
+
+},[[4,"runtime","vendors"]]]);
+});
