@@ -4,15 +4,15 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "30852224d32abfbc002c5d8284ed598f"
+    "revision": "c7de31e8e43a6d3379ffdd6c7712cc17"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "269b6cd662caa7888953428951a83d9a"
+    "revision": "fbb1f235afca264832ce76a4694e1950"
   },
   {
     "url": "glance.js",
-    "revision": "18889cdd85eb101e2bf1883a69248ade"
+    "revision": "ad3257ffd2d3feca069aad2b352e90e7"
   },
   {
     "url": "index.html",
@@ -412,7 +412,7 @@ workboxSW.precache([
   },
   {
     "url": "runtime.js",
-    "revision": "a2a0db74e90f5c4574a01b2519bf5b4a"
+    "revision": "9202f93a37bfb12f59d16e829f03f73b"
   },
   {
     "url": "version.js",
@@ -426,8 +426,8 @@ workboxSW.precache([
 
 workboxSW.router.registerRoute(
   /\.js|\.png|\.wasm$/,
-  workboxSW.strategies.networkFirst({
-    cacheName: 'networkFirstContent',
+  workboxSW.strategies.staleWhileRevalidate({
+    cacheName: 'staleWhileRevalidateContent',
     cacheExpiration: {
       maxEntries: 50,
       maxAgeSeconds: 7 * 24 * 60 * 60 * 26,
