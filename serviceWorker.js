@@ -12,19 +12,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "6dd92dd485d22414aab9206084bc63f6"
-  },
-  {
-    "url": "Glance.js",
-    "revision": "ef48b4c20150e7875ee8d80e47ee23d7"
-  },
-  {
-    "url": "GlanceExternal_ITKReader.js",
-    "revision": "5153eed5690cc161cb60690b35dd1479"
-  },
-  {
-    "url": "GlanceExternal_Workbox.js",
-    "revision": "1f5bdc78befc81e92906c4e03799f689"
+    "revision": "1e33c334a49b29ba98f30172b758d9f3"
   },
   {
     "url": "index.html",
@@ -425,10 +413,6 @@ workboxSW.precache([
   {
     "url": "runtime.js",
     "revision": "9202f93a37bfb12f59d16e829f03f73b"
-  },
-  {
-    "url": "version.js",
-    "revision": "8f2b2240e7f0f5462bcbb974e7673ef8"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
