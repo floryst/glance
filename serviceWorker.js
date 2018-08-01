@@ -12,7 +12,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "1e33c334a49b29ba98f30172b758d9f3"
+    "revision": "f623af3a0c3353117d81d81b40b2c6bf"
   },
   {
     "url": "index.html",
@@ -336,7 +336,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/readImageLocalFile.js",
-    "revision": "ec47f9cf0803224a35dd136df1227c7b"
+    "revision": "7aee373deb88e2afa4c716c17ede43d2"
   },
   {
     "url": "itk/readMeshArrayBuffer.js",
@@ -413,6 +413,10 @@ workboxSW.precache([
   {
     "url": "runtime.js",
     "revision": "9202f93a37bfb12f59d16e829f03f73b"
+  },
+  {
+    "url": "version.js",
+    "revision": "8f2b2240e7f0f5462bcbb974e7673ef8"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
