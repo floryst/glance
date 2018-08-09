@@ -12,7 +12,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "f623af3a0c3353117d81d81b40b2c6bf"
+    "revision": "000430dfa78ce63b3ea2bed85184ac47"
   },
   {
     "url": "index.html",
@@ -336,7 +336,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/readImageLocalFile.js",
-    "revision": "7aee373deb88e2afa4c716c17ede43d2"
+    "revision": "ec47f9cf0803224a35dd136df1227c7b"
   },
   {
     "url": "itk/readMeshArrayBuffer.js",
