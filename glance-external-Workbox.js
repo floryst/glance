@@ -1,1 +1,26 @@
-!function(e,o){if("object"==typeof exports&&"object"==typeof module)module.exports=o();else if("function"==typeof define&&define.amd)define([],o);else{var r=o();for(var t in r)("object"==typeof exports?exports:e)[t]=r[t]}}(window,function(){return(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{320:function(e,o,r){"use strict";"serviceWorker"in navigator&&"http:"!==document.location.protocol&&window.addEventListener("load",function(){navigator.serviceWorker.register("./serviceWorker.js").then(function(e){console.log("Workbox service worker successful with scope:",e.scope)}).catch(function(e){console.error("Workbox service worker failed to register",e)})})}},[[320,0]]])});
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(window, function() {
+return (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["glance-external-Workbox"],{
+
+/***/ "./externals/Workbox/index.js":
+/*!************************************!*\
+  !*** ./externals/Workbox/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nif ('serviceWorker' in navigator && document.location.protocol !== 'http:') {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('./serviceWorker.js').then(function (registration) {\n      console.log('Workbox service worker successful with scope:', registration.scope);\n    }).catch(function (error) {\n      console.error('Workbox service worker failed to register', error);\n    });\n  });\n}\n\n//# sourceURL=webpack:///./externals/Workbox/index.js?");
+
+/***/ })
+
+},[["./externals/Workbox/index.js","runtime"]]]);
+});
