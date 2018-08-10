@@ -22,7 +22,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
-/***/ 0:
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./node_modules/webpack/hot sync ^\\\\.\\\\/log$\";\n\n//# sourceURL=webpack:///(webpack)/hot_sync_nonrecursive_^\\.\\/log$?");
+
+/***/ }),
+
+/***/ 1:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
@@ -31,7 +42,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 eval("/* (ignored) */\n\n//# sourceURL=webpack:///crypto_(ignored)?");
 
+/***/ }),
+
+/***/ 3:
+/*!********************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:9999 ./externals/ITKReader/index.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /home/forrestli/Glance/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:9999 */\"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:9999\");\nmodule.exports = __webpack_require__(/*! /home/forrestli/Glance/externals/ITKReader/index.js */\"./externals/ITKReader/index.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+
 /***/ })
 
-},[["./externals/ITKReader/index.js","runtime","vendors"]]]);
+},[[3,"runtime","vendors"]]]);
 });
