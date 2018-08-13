@@ -16,7 +16,7 @@ workboxSW.precache([
   },
   {
     "url": "index.html",
-    "revision": "c9bd11ae876f337695c31620f75ed756"
+    "revision": "a6c4b1bf3e60952301671b97d3ed21c9"
   },
   {
     "url": "itk/createWebworkerPromise.js",
