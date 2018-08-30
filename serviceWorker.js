@@ -4,19 +4,23 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "ced3adf50320737b9bfde44bc8150ef9"
+    "revision": "58b61d1f1946070d2095bb912033706a"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "269b6cd662caa7888953428951a83d9a"
+    "revision": "c93baeea7f10af25472f637f909520b8"
   },
   {
     "url": "glance.js",
-    "revision": "0c2556463006ac28ff87d7681a100608"
+    "revision": "c5f0181b4fd910190fd48d3d270ecce7"
+  },
+  {
+    "url": "global.css",
+    "revision": "f7f0684d48bb326b9772b88e0d1a51b0"
   },
   {
     "url": "index.html",
-    "revision": "f54ff66f6d0d08997ffd85976edba49c"
+    "revision": "4419228e390d102285f1cd144728e59e"
   },
   {
     "url": "itk/createWebworkerPromise.js",
@@ -412,7 +416,7 @@ workboxSW.precache([
   },
   {
     "url": "runtime.js",
-    "revision": "a2a0db74e90f5c4574a01b2519bf5b4a"
+    "revision": "9202f93a37bfb12f59d16e829f03f73b"
   },
   {
     "url": "version.js",
