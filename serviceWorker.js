@@ -12,7 +12,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "365ff21db59b508812a085e8923e2aec"
+    "revision": "f3815d607b3fe39512061d4e0084578c"
   },
   {
     "url": "global.css",
