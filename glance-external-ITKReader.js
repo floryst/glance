@@ -1,1 +1,71 @@
-!function(e,n){if("object"==typeof exports&&"object"==typeof module)module.exports=n();else if("function"==typeof define&&define.amd)define([],n);else{var t=n();for(var r in t)("object"==typeof exports?exports:e)[r]=t[r]}}(window,function(){return(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{189:function(e,n){},429:function(e,n,t){"use strict";t.r(n);var r=t(187),a=t(258),i=t.n(a),o=t(259),f=t(0),s=t(146),c=t(261),u=s.a.convertItkToVtkImage;var d={fileName:"",arrayName:null};function l(e,n){var t=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(n,d,t),f.default.obj(e,n),f.default.algo(e,n,0,1),f.default.setGet(e,n,["fileName","arrayName"]),function(e,n){n.classHierarchy.push("vtkITKDicomImageReader"),e.readFileSeries=function(t){return t&&t.length&&t!==n.files?(n.files=t,Object(c.a)(null,t).then(function(e){var n=e.webWorker,t=e.image;return n.terminate(),t}).then(function(t){var r,a,i,o=u(t,{scalarArrayName:n.arrayName||(r=n.fileName,a=r.lastIndexOf("."),i=a>-1?r.substring(0,a):r,"Scalars ".concat(i))});n.output[0]=o,e.modified()})):Promise.resolve()},e.requestData=function(){e.readFileSeries(n.files,n.fileName)}}(e,n)}var m={newInstance:f.default.newInstance(l,"vtkITKDicomImageReader"),extend:l};t.d(n,"extensions",function(){return p}),t.d(n,"registerToGlance",function(){return w}),r.a.setReadImageArrayBufferFromITK(o.a);var p=Array.from(new Set(Object.keys(i.a).map(function(e){return e.toLowerCase()})));function w(e){e&&(p.filter(function(e){return"dcm"!==e}).forEach(function(n){return e.registerReader({extension:n,name:"".concat(n.toUpperCase()," Reader"),vtkReader:r.a,binary:!0,fileNameMethod:"setFileName"})}),e.registerReader({extension:"dcm",name:"DICOM File Series Reader",vtkReader:m,fileNameMethod:"setFileName",fileSeriesMethod:"readFileSeries"}))}n.default={extensions:p,registerToGlance:w};w(("undefined"==typeof window?{}:window).Glance)}},[[429,0,1]]])});
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(window, function() {
+return (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["glance-external-ITKReader"],{
+
+/***/ "./externals/ITKReader/ITKDicomImageReader.js":
+/*!****************************************************!*\
+  !*** ./externals/ITKReader/ITKDicomImageReader.js ***!
+  \****************************************************/
+/*! exports provided: extend, newInstance, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"extend\", function() { return extend; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"newInstance\", function() { return newInstance; });\n/* harmony import */ var vtk_js_Sources_macro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vtk.js/Sources/macro */ \"./node_modules/vtk.js/Sources/macro.js\");\n/* harmony import */ var vtk_js_Sources_Common_DataModel_ITKHelper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vtk.js/Sources/Common/DataModel/ITKHelper */ \"./node_modules/vtk.js/Sources/Common/DataModel/ITKHelper/index.js\");\n/* harmony import */ var itk_readImageDICOMFileSeries__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! itk/readImageDICOMFileSeries */ \"./node_modules/itk/readImageDICOMFileSeries.js\");\n\n\n\nvar convertItkToVtkImage = vtk_js_Sources_Common_DataModel_ITKHelper__WEBPACK_IMPORTED_MODULE_1__[\"default\"].convertItkToVtkImage;\n\nfunction getArrayName(filename) {\n  var idx = filename.lastIndexOf('.');\n  var name = idx > -1 ? filename.substring(0, idx) : filename;\n  return \"Scalars \".concat(name);\n} // ----------------------------------------------------------------------------\n// vtkITKDicomImageReader methods\n// ----------------------------------------------------------------------------\n\n\nfunction vtkITKDicomImageReader(publicAPI, model) {\n  // Set our className\n  model.classHierarchy.push('vtkITKDicomImageReader'); // Returns a promise to signal when image is ready\n\n  publicAPI.readFileSeries = function (files) {\n    if (!files || !files.length || files === model.files) {\n      return Promise.resolve();\n    }\n\n    model.files = files;\n    return Object(itk_readImageDICOMFileSeries__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(null, files).then(function (_ref) {\n      var webWorker = _ref.webWorker,\n          image = _ref.image;\n      webWorker.terminate();\n      return image;\n    }).then(function (itkImage) {\n      var imageData = convertItkToVtkImage(itkImage, {\n        scalarArrayName: model.arrayName || getArrayName(model.fileName)\n      });\n      model.output[0] = imageData;\n      publicAPI.modified();\n    });\n  };\n\n  publicAPI.requestData = function ()\n  /* inData, outData */\n  {\n    publicAPI.readFileSeries(model.files, model.fileName);\n  };\n} // ----------------------------------------------------------------------------\n// Object factory\n// ----------------------------------------------------------------------------\n\n\nvar DEFAULT_VALUES = {\n  fileName: '',\n  // If null/undefined a unique array will be generated\n  arrayName: null\n}; // ----------------------------------------------------------------------------\n\nfunction extend(publicAPI, model) {\n  var initialValues = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};\n  Object.assign(model, DEFAULT_VALUES, initialValues); // Build VTK API\n\n  vtk_js_Sources_macro__WEBPACK_IMPORTED_MODULE_0__[\"default\"].obj(publicAPI, model);\n  vtk_js_Sources_macro__WEBPACK_IMPORTED_MODULE_0__[\"default\"].algo(publicAPI, model, 0, 1);\n  vtk_js_Sources_macro__WEBPACK_IMPORTED_MODULE_0__[\"default\"].setGet(publicAPI, model, ['fileName', 'arrayName']); // vtkITKDicomImageReader methods\n\n  vtkITKDicomImageReader(publicAPI, model);\n} // ----------------------------------------------------------------------------\n\nvar newInstance = vtk_js_Sources_macro__WEBPACK_IMPORTED_MODULE_0__[\"default\"].newInstance(extend, 'vtkITKDicomImageReader'); // ----------------------------------------------------------------------------\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  newInstance: newInstance,\n  extend: extend\n});\n\n//# sourceURL=webpack:///./externals/ITKReader/ITKDicomImageReader.js?");
+
+/***/ }),
+
+/***/ "./externals/ITKReader/index.js":
+/*!**************************************!*\
+  !*** ./externals/ITKReader/index.js ***!
+  \**************************************/
+/*! exports provided: extensions, registerToGlance, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"extensions\", function() { return extensions; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"registerToGlance\", function() { return registerToGlance; });\n/* harmony import */ var vtk_js_Sources_IO_Misc_ITKImageReader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vtk.js/Sources/IO/Misc/ITKImageReader */ \"./node_modules/vtk.js/Sources/IO/Misc/ITKImageReader/index.js\");\n/* harmony import */ var itk_extensionToImageIO__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! itk/extensionToImageIO */ \"./node_modules/itk/extensionToImageIO.js\");\n/* harmony import */ var itk_extensionToImageIO__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(itk_extensionToImageIO__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var itk_readImageArrayBuffer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! itk/readImageArrayBuffer */ \"./node_modules/itk/readImageArrayBuffer.js\");\n/* harmony import */ var _ITKDicomImageReader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ITKDicomImageReader */ \"./externals/ITKReader/ITKDicomImageReader.js\");\n\n\n\n\nvtk_js_Sources_IO_Misc_ITKImageReader__WEBPACK_IMPORTED_MODULE_0__[\"default\"].setReadImageArrayBufferFromITK(itk_readImageArrayBuffer__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar extensions = Array.from(new Set(Object.keys(itk_extensionToImageIO__WEBPACK_IMPORTED_MODULE_1___default.a).map(function (ext) {\n  return ext.toLowerCase();\n})));\nfunction registerToGlance(Glance) {\n  if (Glance) {\n    extensions.filter(function (e) {\n      return e !== 'dcm';\n    }).forEach(function (extension) {\n      return Glance.registerReader({\n        extension: extension,\n        name: \"\".concat(extension.toUpperCase(), \" Reader\"),\n        vtkReader: vtk_js_Sources_IO_Misc_ITKImageReader__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n        binary: true,\n        fileNameMethod: 'setFileName'\n      });\n    });\n    Glance.registerReader({\n      extension: 'dcm',\n      name: 'DICOM File Series Reader',\n      vtkReader: _ITKDicomImageReader__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n      fileNameMethod: 'setFileName',\n      fileSeriesMethod: 'readFileSeries'\n    });\n  }\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  extensions: extensions,\n  registerToGlance: registerToGlance\n});\nvar Glance = (typeof window === 'undefined' ? {} : window).Glance;\nregisterToGlance(Glance);\n\n//# sourceURL=webpack:///./externals/ITKReader/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./node_modules/webpack/hot sync ^\\\\.\\\\/log$\";\n\n//# sourceURL=webpack:///(webpack)/hot_sync_nonrecursive_^\\.\\/log$?");
+
+/***/ }),
+
+/***/ 1:
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/* (ignored) */\n\n//# sourceURL=webpack:///crypto_(ignored)?");
+
+/***/ }),
+
+/***/ 3:
+/*!********************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:9999 ./externals/ITKReader/index.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /home/forrestli/Glance/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:9999 */\"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:9999\");\nmodule.exports = __webpack_require__(/*! /home/forrestli/Glance/externals/ITKReader/index.js */\"./externals/ITKReader/index.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+
+/***/ })
+
+},[[3,"runtime","vendors"]]]);
+});
