@@ -9,7 +9,6 @@ html {
   word-break: break-word;
 }
 
-
 .AboutBox-close-3yqzs {
   position: absolute;
   right: 8px;
@@ -25,12 +24,10 @@ html {
 }
 
 
-
 .PiecewiseFunctionEditor-container-482m9 {
   position: relative;
   left: -10px;
 }
-
 
 .PalettePicker-wrapper-49fzu {
   display: flex;
@@ -60,7 +57,6 @@ html {
 .PalettePicker-blot-3ydet:hover {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
-
 
 .TreeView-wrapper-42p44 {
   display: block;
@@ -103,7 +99,6 @@ html {
 .TreeView-name-289b6 {
   flex: 1 1 auto;
 }
-
 .Datasets-block-2qet1 {
   padding: 4px 0;
   padding-right: 6px;
@@ -160,7 +155,9 @@ html {
 .Datasets-click-4eyup {
   cursor: pointer;
 }
-
+.Datasets-negativeTopSpacing-2crnb {
+  margin-top: -4px;
+}
 
 .Datasets-datasetPanel-2uz4w:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -201,7 +198,6 @@ html {
   min-height: 48px !important;
 }
 
-
 .ColorGroup-container-4qdpd {
   position: absolute;
   bottom: 0;
@@ -210,7 +206,6 @@ html {
   z-index: 10;
   background: gray;
 }
-
 
 .PopUp-container-48cms {
   position: relative;
@@ -223,7 +218,6 @@ html {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 }
-
 
 .PaintTool-container-2dssk {
   padding: 8px;
@@ -302,7 +296,6 @@ html {
   margin-right: -8px;
 }
 
-
 .MeasurementTools-container-4anne {
   padding: 8px;
 }
@@ -375,7 +368,6 @@ html {
 }
 
 
-
 .CropTool-container-4dv1h {
   padding: 0 8px 8px 8px;
 }
@@ -387,7 +379,6 @@ html {
 .EditTools-panelContent-2jdg5 > .v-expansion-panel-content__wrap {
   padding: 0;
 }
-
 
 .GPUInformation-card-5he5z {
   padding: 8px 16px;
@@ -404,7 +395,6 @@ html {
 .GPUInformation-table-2yxu6 td {
   padding: 0 10px;
 }
-
 
 .GlobalSettings-container-237n3 {
   padding: 0;
@@ -425,7 +415,6 @@ html {
   padding-top: 0;
   margin-top: 0;
 }
-
 
 .ControlsDrawer-tabsContainer-4nm17 {
   height: 100%;
@@ -454,8 +443,6 @@ html {
   overflow-y: auto;
 }
 
-
-
 .ErrorBox-errorTextarea-3vjg9 {
   width: 100%;
   min-height: 200px;
@@ -466,7 +453,6 @@ html {
   border-radius: 2px;
   padding: 8px;
 }
-
 
 .RawFileReader-toolbarButton-23gvm span {
   margin-left: 4px;
@@ -492,7 +478,6 @@ html {
   width: 80%;
   margin: auto;
 }
-
 
 .FileLoader-overlay-24pej {
   position: absolute;
@@ -534,7 +519,6 @@ html {
   /* override vuetify's "disabled" coloring. This is vuetify's default color. */
   color: rgba(0, 0, 0, .87);
 }
-
 
 .Landing-root-2gyew {
   display: flex;
@@ -607,7 +591,6 @@ html {
   padding: 10px;
 }
 
-
 .ToolbarSheet-sheet-rq6y2 {
   width: 100%;
   position: absolute;
@@ -623,7 +606,6 @@ html {
   visibility: visible;
   transition-delay: 0s;
 }
-
 .VtkView-container-2s9uu {
   position: relative;
   height: 100%;
@@ -667,7 +649,6 @@ html {
   background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%);
 }
 
-
 .LayoutView-container-5mpaf {
   height: 100%;
   padding: 0;
@@ -685,11 +666,9 @@ html {
   min-width: 0;
 }
 
-
 .ScreenshotDialog-imagePreview-32uw2 {
   border: 2px dashed black;
 }
-
 
 .Screenshots-container-23drb {
   height: 100%;
@@ -721,7 +700,6 @@ html {
 .Screenshots-hoverImage-gq2ay {
   max-height: 200px;
 }
-
 
 .StateFileGenerator-hidden-47cwk {
   display: none;
