@@ -32,7 +32,7 @@
     "name": "Insight Software Consortium"
   },
   "bin": {
-    "itk-js": "./itk-js-cli.js"
+    "itk-js": "itk-js-cli.js"
   },
   "bugs": {
     "url": "https://github.com/InsightSoftwareConsortium/itk-js/issues"

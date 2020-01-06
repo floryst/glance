@@ -4,11 +4,11 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "feda665598f02493313ce3c1750b393b"
+    "revision": "d285ba17ba851dd530f178c83eacb298"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "a991869474a36276b3a2c167fb026894"
+    "revision": "70dd030a445c68bb481a270e5350f657"
   },
   {
     "url": "glance.css",
@@ -16,7 +16,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "ab24656074ca88a6eb59d3e34f86583e"
+    "revision": "eb7f323fb731b57b60886bcdeba83114"
   },
   {
     "url": "global.css",
@@ -511,42 +511,6 @@ workboxSW.precache([
     "revision": "f9eeedb3c62286b36caa9b17ffe902f0"
   },
   {
-    "url": "itk/Pipelines/BinShrink.js",
-    "revision": "bf3e162fe12005810737a684fc22de51"
-  },
-  {
-    "url": "itk/Pipelines/BinShrinkWasm.js",
-    "revision": "de925c07c7d49e4d44defd5fb6d27d53"
-  },
-  {
-    "url": "itk/Pipelines/InputOutputFiles.js",
-    "revision": "0451c22aaa8c66becad576ccba377755"
-  },
-  {
-    "url": "itk/Pipelines/InputOutputFilesWasm.js",
-    "revision": "8ffdc7fea594ba0fac8eb633153249bf"
-  },
-  {
-    "url": "itk/Pipelines/itkJSPipelinePreBinShrink.js",
-    "revision": "1474cbea991810984a7814dcdc96d33e"
-  },
-  {
-    "url": "itk/Pipelines/itkJSPipelinePreInputOutputFiles.js",
-    "revision": "4cc141333502c350588f2664ad94b542"
-  },
-  {
-    "url": "itk/Pipelines/itkJSPipelinePreStdoutStderr.js",
-    "revision": "51ead2ebb1200bf1dd852b38fb354cd0"
-  },
-  {
-    "url": "itk/Pipelines/StdoutStderr.js",
-    "revision": "07ddf2d0e7b0e8fc5ad8b1c81aa163e6"
-  },
-  {
-    "url": "itk/Pipelines/StdoutStderrWasm.js",
-    "revision": "c5e2fdba9a15b748e61efa174b6bb67b"
-  },
-  {
     "url": "itk/PixelTypes.js",
     "revision": "4fa031705ef3b81acc4a2717e0fd2049"
   },
@@ -752,11 +716,11 @@ workboxSW.precache([
   },
   {
     "url": "vendors.css",
-    "revision": "4284c76b84835707a96adba4da84dee5"
+    "revision": "77382ca6aed3be9eb2f70169a6dcc2c2"
   },
   {
     "url": "vendors.js",
-    "revision": "a7a8d5dc0abbf4d77762000f8f19cb88"
+    "revision": "842654fa0f7cc9c60ffbeca630e90b09"
   },
   {
     "url": "version.js",
