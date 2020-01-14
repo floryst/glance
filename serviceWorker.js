@@ -4,19 +4,19 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "d285ba17ba851dd530f178c83eacb298"
+    "revision": "1dcdf8726ffb50e08a4e46fd67c3f53b"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "70dd030a445c68bb481a270e5350f657"
+    "revision": "20a696592ca77878b5bc57fef2a070c1"
   },
   {
     "url": "glance.css",
-    "revision": "cdf084b4304f92d8bc4909c564cc4b07"
+    "revision": "db05f81564de410f51ee0d6e8e21bae9"
   },
   {
     "url": "glance.js",
-    "revision": "616179b2df0db47e4fbb596cfbfe4f6b"
+    "revision": "49c77a399c17f4e4931192902905c75a"
   },
   {
     "url": "global.css",
@@ -511,6 +511,18 @@ workboxSW.precache([
     "revision": "f9eeedb3c62286b36caa9b17ffe902f0"
   },
   {
+    "url": "itk/Pipelines/asdf.js",
+    "revision": "58340a2a75d918c8d6a76d451e6b4dd0"
+  },
+  {
+    "url": "itk/Pipelines/itkfiltering.js",
+    "revision": "11896aabfc8077cf2e283f7796b696f4"
+  },
+  {
+    "url": "itk/Pipelines/itkfilteringWasm.js",
+    "revision": "e79e4321ac90fe2a3f80b0e254745855"
+  },
+  {
     "url": "itk/PixelTypes.js",
     "revision": "4fa031705ef3b81acc4a2717e0fd2049"
   },
@@ -716,11 +728,11 @@ workboxSW.precache([
   },
   {
     "url": "vendors.css",
-    "revision": "77382ca6aed3be9eb2f70169a6dcc2c2"
+    "revision": "b8c86cd6a5a6fa420feb81578ca139e9"
   },
   {
     "url": "vendors.js",
-    "revision": "fb15b7da8cf03de1cf6e2579398566ea"
+    "revision": "12b7566c119cedf30d1a228b74965c34"
   },
   {
     "url": "version.js",
