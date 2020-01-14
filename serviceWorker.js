@@ -4,11 +4,11 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "1dcdf8726ffb50e08a4e46fd67c3f53b"
+    "revision": "90ae66c2da911933ee40a4cb29e54f97"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "20a696592ca77878b5bc57fef2a070c1"
+    "revision": "98fded89aca7750d57eccc33c3dfb1e0"
   },
   {
     "url": "glance.css",
@@ -16,7 +16,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "1cda38fd61c9ac4c3737e88bff88a361"
+    "revision": "27f876b7223e225f9d6b0afc1efd9829"
   },
   {
     "url": "global.css",
@@ -44,7 +44,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/extensionToPolyDataIO.js",
-    "revision": "26106c73e7c9bac5f646d649f0ba3b73"
+    "revision": "805072ae47ac2e8307cf2b0f3a4610c1"
   },
   {
     "url": "itk/FloatTypes.js",
@@ -236,7 +236,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/itk-js-cli.js",
-    "revision": "afd047fde2754275069d81ba137cf9c6"
+    "revision": "5726292c364b1b7748e19d62748ef89e"
   },
   {
     "url": "itk/itkConfig.js",
@@ -515,6 +515,14 @@ workboxSW.precache([
     "revision": "58340a2a75d918c8d6a76d451e6b4dd0"
   },
   {
+    "url": "itk/Pipelines/InputOutputFilesTest.js",
+    "revision": "dce2afa2d68a74d87631178e04396227"
+  },
+  {
+    "url": "itk/Pipelines/InputOutputFilesTestWasm.js",
+    "revision": "3e723884b427c09972b646f74e249509"
+  },
+  {
     "url": "itk/Pipelines/itkfiltering.js",
     "revision": "11896aabfc8077cf2e283f7796b696f4"
   },
@@ -523,12 +531,64 @@ workboxSW.precache([
     "revision": "e79e4321ac90fe2a3f80b0e254745855"
   },
   {
+    "url": "itk/Pipelines/itkJSPipelinePreInputOutputFilesTest.js",
+    "revision": "d35d9824d3aeb0b65600992477a0cb87"
+  },
+  {
+    "url": "itk/Pipelines/itkJSPipelinePreitkTestDriver.js",
+    "revision": "97ad794cc81234a93207bd6fcc28c1af"
+  },
+  {
+    "url": "itk/Pipelines/itkJSPipelinePreMedianFilterTest.js",
+    "revision": "4c2ba0de21a7715cdd98601eeb1d4e12"
+  },
+  {
+    "url": "itk/Pipelines/itkJSPipelinePreMeshReadWriteTest.js",
+    "revision": "ee08debcbfae65ba718d6b18b58acc02"
+  },
+  {
+    "url": "itk/Pipelines/itkJSPipelinePreMeshToPolyData.js",
+    "revision": "95c6b476a4a69b082763fb0387c18316"
+  },
+  {
+    "url": "itk/Pipelines/itkJSPipelinePreStdoutStderrTest.js",
+    "revision": "44eb38006d03b8b9a6dc65dde10c5fb5"
+  },
+  {
+    "url": "itk/Pipelines/itkJSPipelinePreWriteVTKPolyDataTest.js",
+    "revision": "cb7406eb4b1443aa7c09fb2096527484"
+  },
+  {
+    "url": "itk/Pipelines/MedianFilterTest.js",
+    "revision": "6a8acdad0a7ee5a96c4a9f1be2709934"
+  },
+  {
+    "url": "itk/Pipelines/MedianFilterTestWasm.js",
+    "revision": "232b9593ce9e124c3e8401aaab6e6592"
+  },
+  {
+    "url": "itk/Pipelines/MeshReadWriteTest.js",
+    "revision": "ff36c95ab13f23f127099b6192370909"
+  },
+  {
+    "url": "itk/Pipelines/MeshReadWriteTestWasm.js",
+    "revision": "cebb815897d264bf1b11fcb68a6f7383"
+  },
+  {
+    "url": "itk/Pipelines/StdoutStderrTest.js",
+    "revision": "cf3a6829537adec37a94632f5a50a40f"
+  },
+  {
+    "url": "itk/Pipelines/StdoutStderrTestWasm.js",
+    "revision": "86322f6fb1a26bcd03915cf52a374650"
+  },
+  {
     "url": "itk/PixelTypes.js",
     "revision": "4fa031705ef3b81acc4a2717e0fd2049"
   },
   {
     "url": "itk/PolyDataIOIndex.js",
-    "revision": "0a5a4f503b04a856cbb08e7750e015d3"
+    "revision": "9c4ff3746125324d240de953be9d145d"
   },
   {
     "url": "itk/readArrayBuffer.js",
@@ -664,7 +724,7 @@ workboxSW.precache([
   },
   {
     "url": "itk/umd/itk.js",
-    "revision": "0199bf178a4e3d5a12f1f79ba8ab5233"
+    "revision": "bd2f43bfa7a96bc09fc2deecb6abf0d8"
   },
   {
     "url": "itk/WebWorkers/ImageIO.worker.js",
@@ -728,11 +788,11 @@ workboxSW.precache([
   },
   {
     "url": "vendors.css",
-    "revision": "b8c86cd6a5a6fa420feb81578ca139e9"
+    "revision": "9f9aa69f1aa5f698003136811505391f"
   },
   {
     "url": "vendors.js",
-    "revision": "12b7566c119cedf30d1a228b74965c34"
+    "revision": "61dafa6ea117a6dad8ed43cd22c68940"
   },
   {
     "url": "version.js",

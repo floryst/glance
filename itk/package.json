@@ -1,32 +1,26 @@
 {
-  "_args": [
-    [
-      "itk@10.1.0",
-      "/home/forrestli/Glance"
-    ]
-  ],
-  "_from": "itk@10.1.0",
-  "_id": "itk@10.1.0",
+  "_from": "itk@10.2.1",
+  "_id": "itk@10.2.1",
   "_inBundle": false,
-  "_integrity": "sha512-sR2ToHkC8A8CKt4uKQm9aNXno28LGMTTIZfXZ3khCOjGzEJeWhUst+E1F9Wtx38qb/ownU7sNNg9Mn2G2zFYag==",
+  "_integrity": "sha512-rmEejdRPPpUu0gOuJ1zLL87/QLuKz4UBqFtHVx/xsKo7smDtphnWb8dVXTFyi3dOuBmFUDzlnpecoFixAWj/kg==",
   "_location": "/itk",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "itk@10.1.0",
+    "raw": "itk@10.2.1",
     "name": "itk",
     "escapedName": "itk",
-    "rawSpec": "10.1.0",
+    "rawSpec": "10.2.1",
     "saveSpec": null,
-    "fetchSpec": "10.1.0"
+    "fetchSpec": "10.2.1"
   },
   "_requiredBy": [
-    "/",
-    "/paraview-glance"
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/itk/-/itk-10.1.0.tgz",
-  "_spec": "10.1.0",
+  "_resolved": "https://registry.npmjs.org/itk/-/itk-10.2.1.tgz",
+  "_shasum": "074e5ed9e704f5f8f53437422d74b637285fe31e",
+  "_spec": "itk@10.2.1",
   "_where": "/home/forrestli/Glance",
   "author": {
     "name": "Insight Software Consortium"
@@ -37,6 +31,7 @@
   "bugs": {
     "url": "https://github.com/InsightSoftwareConsortium/itk-js/issues"
   },
+  "bundleDependencies": false,
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
@@ -49,6 +44,7 @@
     "promise-file-reader": "^1.0.2",
     "webworker-promise": "^0.4.2"
   },
+  "deprecated": false,
   "description": "High performance spatial analysis in a JavaScript runtime environment.",
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -126,5 +122,5 @@
       "examples/UMD/test/index.js"
     ]
   },
-  "version": "10.1.0"
+  "version": "10.2.1"
 }
