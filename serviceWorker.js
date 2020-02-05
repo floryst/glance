@@ -4,11 +4,11 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "90ae66c2da911933ee40a4cb29e54f97"
+    "revision": "2214778994714c87b43adeb30b9db7c8"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "98fded89aca7750d57eccc33c3dfb1e0"
+    "revision": "3da1de8f1db90213e42638ec944f1ec3"
   },
   {
     "url": "glance.css",
@@ -16,7 +16,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "27f876b7223e225f9d6b0afc1efd9829"
+    "revision": "e64866de729b668e68332aecb68f3259"
   },
   {
     "url": "global.css",
@@ -24,7 +24,7 @@ workboxSW.precache([
   },
   {
     "url": "index.html",
-    "revision": "a25af6fd5907994441e0ebe2045603fa"
+    "revision": "36e5343e1111aa303be739b2938e422e"
   },
   {
     "url": "itk/bufferToTypedArray.js",
@@ -359,14 +359,6 @@ workboxSW.precache([
     "revision": "5d56ccd99113d3a04f449b728b07c4c4"
   },
   {
-    "url": "itk/node_modules/mime-db/index.js",
-    "revision": "a3e41e93954b3742ed84d3050d6038cf"
-  },
-  {
-    "url": "itk/node_modules/mime-types/index.js",
-    "revision": "bf015bb6811afc5c98e3e5f7072fdc79"
-  },
-  {
     "url": "itk/node_modules/webworker-promise/coverage/lcov-report/base.css",
     "revision": "8eff00e811a7b84143fcd962eb512d87"
   },
@@ -509,10 +501,6 @@ workboxSW.precache([
   {
     "url": "itk/node_modules/webworker-promise/webpack.config.js",
     "revision": "f9eeedb3c62286b36caa9b17ffe902f0"
-  },
-  {
-    "url": "itk/Pipelines/asdf.js",
-    "revision": "58340a2a75d918c8d6a76d451e6b4dd0"
   },
   {
     "url": "itk/Pipelines/InputOutputFilesTest.js",
@@ -788,11 +776,11 @@ workboxSW.precache([
   },
   {
     "url": "vendors.css",
-    "revision": "9f9aa69f1aa5f698003136811505391f"
+    "revision": "3c3ed88cf192219685f91853c4d6ef37"
   },
   {
     "url": "vendors.js",
-    "revision": "61dafa6ea117a6dad8ed43cd22c68940"
+    "revision": "e22ca6409a9d65b662f9fe316055ebee"
   },
   {
     "url": "version.js",
