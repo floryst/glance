@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "itk@10.2.1",
+      "/home/forrestli/Glance"
+    ]
+  ],
   "_from": "itk@10.2.1",
   "_id": "itk@10.2.1",
   "_inBundle": false,
@@ -19,8 +25,7 @@
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/itk/-/itk-10.2.1.tgz",
-  "_shasum": "074e5ed9e704f5f8f53437422d74b637285fe31e",
-  "_spec": "itk@10.2.1",
+  "_spec": "10.2.1",
   "_where": "/home/forrestli/Glance",
   "author": {
     "name": "Insight Software Consortium"
@@ -31,7 +36,6 @@
   "bugs": {
     "url": "https://github.com/InsightSoftwareConsortium/itk-js/issues"
   },
-  "bundleDependencies": false,
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
@@ -44,7 +48,6 @@
     "promise-file-reader": "^1.0.2",
     "webworker-promise": "^0.4.2"
   },
-  "deprecated": false,
   "description": "High performance spatial analysis in a JavaScript runtime environment.",
   "devDependencies": {
     "@babel/core": "^7.2.2",
