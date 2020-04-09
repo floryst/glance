@@ -4,11 +4,11 @@ const workboxSW = new self.WorkboxSW({ clientsClaim: true });
 workboxSW.precache([
   {
     "url": "glance-external-ITKReader.js",
-    "revision": "e57683d0effb736440238c8de78619ed"
+    "revision": "26ce3d4954c803f317b45cfb8ecbf496"
   },
   {
     "url": "glance-external-Workbox.js",
-    "revision": "ba062aaa2c6ddb7e85a5380ff6950249"
+    "revision": "c88538163ddbe6db577f45c6e8be3170"
   },
   {
     "url": "glance.css",
@@ -16,7 +16,7 @@ workboxSW.precache([
   },
   {
     "url": "glance.js",
-    "revision": "9aeb102f2b80fbf218f6accf06dc775f"
+    "revision": "5c6a7ce700825ff02bc8a44133343141"
   },
   {
     "url": "global.css",
@@ -512,11 +512,11 @@ workboxSW.precache([
   },
   {
     "url": "itk/Pipelines/itkfiltering.js",
-    "revision": "11896aabfc8077cf2e283f7796b696f4"
+    "revision": "6b3e4f74e91da0b5c06beea13bc93985"
   },
   {
     "url": "itk/Pipelines/itkfilteringWasm.js",
-    "revision": "e79e4321ac90fe2a3f80b0e254745855"
+    "revision": "e14b48e1bf552a5beebada601e900c8c"
   },
   {
     "url": "itk/Pipelines/itkJSPipelinePreInputOutputFilesTest.js",
